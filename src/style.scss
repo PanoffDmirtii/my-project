@@ -1,0 +1,98 @@
+$blue: #5e85b1;
+$blueActive: #445d7a;
+$white: #f6fafd;
+$main-work-space: #e5ebf2;
+
+// color font
+$white: #f6fafd;
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav main";
+  grid-template-rows: 120px 1fr;
+  grid-template-columns: 150px 1fr;
+  height: 100vh;
+  margin: 0;
+}
+
+.header {
+  grid-area: header;
+  background: $white;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  z-index: 5;
+
+  .header__logo {
+    padding: 10px;
+    font-size: 32px;
+  }
+}
+
+.navigation {
+  grid-area: nav;
+  background: $blue;
+  box-shadow: 2px 0 6px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 1px;
+  z-index: 5;
+  color: $white;
+}
+
+.navigation__header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $white;
+
+  .fullname {
+    padding: 5px;
+  }
+
+  .setting {
+    padding: 5px;
+  }
+}
+
+.navigation__items {
+
+  ul {
+    list-style-type: none;
+    padding: 2px 0 0;
+    margin: 0;
+
+    li {
+      padding: 10px;
+      margin-top: 2px;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+
+        span:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .active {
+    background: $blueActive;
+  }
+}
+
+.main {
+  grid-area: main;
+  background: $main-work-space;
+}
+
+.content-wrapper {
+  padding: 20px;
+}
