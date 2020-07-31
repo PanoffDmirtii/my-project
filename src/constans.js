@@ -1,4 +1,6 @@
 export const LINKS = {
-  LOGIN: '/login',
-  CARDS: '/cards',
+  UI : {
+    UI_BASE_PAGE: '/ui',
+    CARDS_PAGE: '/ui/cards',
+  }
 }

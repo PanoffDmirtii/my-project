@@ -1,0 +1,22 @@
+@import '../../fontStyle.scss';
+
+.description {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  max-width: 900px;
+  width: fit-content;
+
+  &__title {
+    font-size: $l;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  &__text {
+    font-size: $m;
+    padding: 5px;
+
+  }
+}

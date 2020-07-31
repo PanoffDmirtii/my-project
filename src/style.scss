@@ -1,3 +1,5 @@
+@import './fontStyle.scss';
+
 $blue: #5e85b1;
 $blueActive: #445d7a;
 $white: #f6fafd;
@@ -5,8 +7,6 @@ $main-work-space: #e5ebf2;
 
 // color font
 $white: #f6fafd;
-
-
 
 body {
   padding: 0;
@@ -94,5 +94,5 @@ body {
 }
 
 .content-wrapper {
-  padding: 20px;
+  padding: 30px;
 }

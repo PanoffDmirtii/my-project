@@ -1,0 +1,104 @@
+@import '../../fontStyle.scss';
+
+$primary: DodgerBlue;
+$success: ForestGreen;
+$warning: Gold;
+$danger: Red;
+$borderFillColor: #909090;
+
+
+.card {
+  border: 1px solid $borderFillColor;
+  border-radius: 5px;
+  width: 15rem;
+  padding: 5px;
+  color: #000;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+
+
+  &__title {
+    padding: 5px;
+    font-size: $l;
+    border-bottom: 1px solid $borderFillColor;
+  }
+
+  &__body {
+    padding: 5px;
+    font-size: $sm;
+  }
+
+  &_primary {
+    background: $primary;
+    color: #fff;
+
+    .card__title {
+      border-bottom: 1px solid $primary;
+    }
+  }
+
+  &_success {
+    background: $success;
+    color: #fff;
+
+    .card__title {
+      border-bottom: 1px solid $success;
+    }
+  }
+
+  &_warning {
+    background: $warning;
+    color: #fff;
+
+    .card__title {
+      border-bottom: 1px solid $warning;
+    }
+  }
+
+  &_danger {
+    background: $danger;
+    color: #fff;
+
+    .card__title {
+      border-bottom: 1px solid $danger;
+    }
+  }
+
+  &_outline {
+    background: #fff;
+    color: #000;
+
+    &-primary {
+      border: 1px solid $primary;
+
+      .card__title {
+        border-bottom: 1px solid $primary;
+      }
+    }
+
+    &-success {
+      border: 1px solid $success;
+
+      .card__title {
+        border-bottom: 1px solid $primary;
+      }
+    }
+
+    &-warning {
+      border: 1px solid $warning;
+
+      .card__title {
+        border-bottom: 1px solid $primary;
+      }
+    }
+
+    &-danger {
+      border: 1px solid $danger;
+
+      .card__title {
+        border-bottom: 1px solid $primary;
+      }
+    }
+  }
+
+
+}
